@@ -1,0 +1,87 @@
+.h-main-container {
+  width: 17vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+
+  .offers-container {
+    display: flex;
+    width: 100%;
+    align-items: start;
+
+    .offers {
+      display: flex;
+      font-size: 0.7em;
+      gap: 0.5rem;
+
+      span {
+        background: #f2f4f7;
+        border-radius: 0.3rem;
+        color: #074786;
+        padding: 0.2rem 0.7em;
+      }
+    }
+  }
+
+  .heading-container {
+    // margin-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
+    .heading {
+      color: #626e79;
+      margin-top: 0.5rem;
+      font-weight: bold;
+      text-align: center;
+    }
+  }
+
+  .para-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 0.5rem;
+    font-size: 12px;
+    background: #fbfcfd;
+
+    .para {
+      color: #626e79;
+      font-size: 0.9rem;
+    }
+
+    .price-container {
+      display: flex;
+      align-items: end;
+      gap: 0.4rem;
+      margin-top: -1em;
+
+      .price-1 {
+        font-size: 1rem;
+      }
+
+      .price-2 {
+        font-size: 0.8rem;
+        color: #9fa9b3;
+      }
+
+      .price-3 {
+        font-size: 0.8rem;
+        color: #ef4c5d;
+      }
+    }
+  }
+
+  .btn {
+    padding: 0.5rem 4rem;
+    width: 90%;
+    border: none;
+    border-radius: 10px;
+    background-color: #1b88f4;
+    color: #fff;
+    cursor: pointer;
+  }
+}
