@@ -1,4 +1,5 @@
 import "./Footer.scss";
+import down from "../../assets/png/down.png"
 
 const Footer = () => {
   return (
@@ -23,7 +24,7 @@ const Footer = () => {
         </ul>
       </div>
       <div className="united-states">
-        <p>United States</p>
+        <p>United States <span><img src={down} alt="down" /></span></p>
       </div>
     </footer>
   );

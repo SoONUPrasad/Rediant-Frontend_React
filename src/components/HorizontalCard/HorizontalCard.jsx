@@ -21,7 +21,7 @@ const HorizontalCard = () => {
         <div className="price-container">
           <span className="price-1">$39.96</span>
           <span className="price-2">$49.96</span>
-          <span className="price-3">(20% Off)</span>
+          <span className="price-3">(20%Off)</span>
         </div>
       </div>
       <button className="btn">View Deal</button>
