@@ -1,10 +1,12 @@
 import "./Card.scss";
 import download_1 from "../../assets/download_1.png";
-
+import blueDown from "../../assets/png/blueDown.png"
 // eslint-disable-next-line react/prop-types
-const Card = ({ rate, star, rateText }) => {
+const Card = ({ rate, star, rateText, number, value, png }) => {
   return (
     <div className="main-container">
+      <div className="value"><span><img src={png} alt="png" width={15}/></span> {value}</div>
+      <div className="number">{number}</div>
       <div className="img-container">
         <img src={download_1} alt="img" />
       </div>
@@ -22,7 +24,7 @@ const Card = ({ rate, star, rateText }) => {
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam,
             quod, quaerat, quasi, quidem, quibusdam, quod, quaerat, quasi.
           </p>
-          <div className="see-more">Show more</div>
+          <div className="see-more">Show more <span><img src={blueDown} alt="show-more" /></span></div>
         </div>
       </div>
       <div className="rating-container">

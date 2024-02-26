@@ -4,10 +4,12 @@ import HorizontalCard from "../../components/HorizontalCard/HorizontalCard";
 import SignUp from "../../components/Signup/SignUp";
 import correct from "../../assets/png/correct.png";
 import mark from "../../assets/png/Marks.png";
-import downArrow from "../../assets/png/down.png"
-import fiveStar from "../../assets/png/5star.png"
-import fourAndHalfStar from "../../assets/png/4.1Star.png"
-import fourStar from "../../assets/png/4star.png"
+import downArrow from "../../assets/png/down.png";
+import fiveStar from "../../assets/png/5star.png";
+import fourAndHalfStar from "../../assets/png/4.1Star.png";
+import fourStar from "../../assets/png/4star.png";
+import cup from "../../assets/png/cup.png";
+import diamond from "../../assets/png/diamond.png";
 
 const Home = () => {
   return (
@@ -32,7 +34,9 @@ const Home = () => {
           </div>
           <div className="more">
             <span>Top Relevant</span>
-            <span><img src={downArrow} alt="down-png" /></span>
+            <span>
+              <img src={downArrow} alt="down-png" />
+            </span>
           </div>
         </div>
 
@@ -59,10 +63,34 @@ const Home = () => {
       </div>
 
       <div className="card-container">
-        <Card rate={"9.8"} rateText={"Exceptional"} star={fiveStar}/>
-        <Card rate={"9.5"} rateText={"Excellent"} star={fourAndHalfStar}/>
-        <Card rate={"9.3"} rateText={"Exceptional"} star={fiveStar}/>
-        <Card rate={"9.1"} rateText={"Very Good"} star={fourStar}/>
+        <Card
+          rate={"9.8"}
+          rateText={"Exceptional"}
+          star={fiveStar}
+          number={"1"}
+          value={"Best Choice"}
+          png={cup}
+        />
+        <Card
+          rate={"9.5"}
+          rateText={"Excellent"}
+          star={fourAndHalfStar}
+          number={"2"}
+          value={"Best Value"}
+          png={diamond}
+        />
+        <Card
+          rate={"9.3"}
+          rateText={"Exceptional"}
+          star={fiveStar}
+          number={"3"}
+        />
+        <Card
+          rate={"9.1"}
+          rateText={"Very Good"}
+          star={fourStar}
+          number={"4"}
+        />
       </div>
       <div className="para">Related deals you might like for</div>
       <div className="horizontal-container">
