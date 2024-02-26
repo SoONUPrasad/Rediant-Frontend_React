@@ -10,6 +10,7 @@ import fourAndHalfStar from "../../assets/png/4.1Star.png";
 import fourStar from "../../assets/png/4star.png";
 import cup from "../../assets/png/cup.png";
 import diamond from "../../assets/png/diamond.png";
+import BestValue from "../../components/value/BestValue";
 
 const Home = () => {
   return (
@@ -63,21 +64,23 @@ const Home = () => {
       </div>
 
       <div className="card-container">
+        <div className="best-value">
+          <BestValue value={"Best Choice"} png={cup} />
+        </div>
         <Card
           rate={"9.8"}
           rateText={"Exceptional"}
           star={fiveStar}
           number={"1"}
-          value={"Best Choice"}
-          png={cup}
         />
+        <div className="best-value">
+          <BestValue value={"Best Value"} png={diamond} />
+        </div>
         <Card
           rate={"9.5"}
           rateText={"Excellent"}
           star={fourAndHalfStar}
           number={"2"}
-          value={"Best Value"}
-          png={diamond}
         />
         <Card
           rate={"9.3"}
