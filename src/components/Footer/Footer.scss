@@ -1,25 +1,38 @@
-.footer-container{
+.footer-container {
     background: #212731;
     color: #ffffff;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     padding: 0 7em 10em 2em;
-
-    h6{
-        font-size: 1.5em;
-        font-weight: 600;
-        margin-bottom: 1em;
+  
+    h6 {
+      font-size: 1.5em;
+      font-weight: 600;
+      margin-bottom: 1em;
     }
-
-    ul{
-        li{
-            list-style: none;
-            color:#B6BDC4;
-            margin-top: 1rem;
-        }
+  
+    ul {
+      li {
+        list-style: none;
+        color: #b6bdc4;
+        margin-top: 1rem;
+      }
     }
-    p{
-        color:#B6BDC4;
+  
+    p {
+      color: #b6bdc4;
     }
-}
+  
+    /* Media queries for responsiveness */
+    @media (max-width: 768px) {
+      flex-direction: column;
+      text-align: center;
+      padding: 2em;
+  
+      h6 {
+        margin-bottom: 0.5em;
+      }
+    }
+  }
+  

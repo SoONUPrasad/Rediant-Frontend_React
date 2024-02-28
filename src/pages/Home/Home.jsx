@@ -12,6 +12,7 @@ import cup from "../../assets/png/cup.png";
 import diamond from "../../assets/png/diamond.png";
 import BestValue from "../../components/value/BestValue";
 import data from "../../data";
+import CardTwo from "../../components/CardTwo/CardTwo";
 
 const Home = () => {
   return (
@@ -91,18 +92,20 @@ const Home = () => {
         />
         <Card
           rate={data.data3.rate}
+          rateText={data.data3.rateText}
           spanBold={data.data3.boldPara}
           paraOne={data.data3.para1}
           paraTwo={data.data3.para2}
-          rateText={data.data3.rateText}
           star={fiveStar}
           number={data.data3.number}
         />
-        <Card
-          rate={"9.1"}
-          rateText={"Very Good"}
+        <CardTwo
+          rate={data.data4.rate}
+          rateText={data.data4.rateText}
+          spanBold={data.data4.boldPara}
+          paraOne={data.data4.para1}
           star={fourStar}
-          number={"4"}
+          number={data.data4.number}
         />
       </div>
       <div className="para">Related deals you might like for</div>

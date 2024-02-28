@@ -1,12 +1,12 @@
 .main-container {
+  display: flex;
   justify-content: center;
   align-items: center;
   margin: 2rem;
   padding: 1rem;
   background: #ffffff;
 
-  .number2 {
-    background: #000;
+  .number {
     text-align: center;
     width: 45px;
     background: #ffffff;
@@ -20,6 +20,15 @@
     color: #626e79;
   }
 
+  .img-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    color: #626e79;
+  }
+
   .para-container {
     .para {
       color: #000;
@@ -30,15 +39,30 @@
     }
 
     .para-text {
-      margin-left: 1rem;
+      .highlight-container {
+        margin: 1rem;
+        background: #fff4ed;
+        padding: 1rem;
+        border-radius: 0.5em;
 
-      .text {
-        margin-left: 2rem;
+        span {
+          margin-right: 0.3em;
+          color: #1b88f4;
+        }
+      }
+
+      .doc-container {
+        .p {
+          span {
+            margin-right: 0.5em;
+          }
+        }
       }
     }
 
     .see-more {
       color: #1b88f4;
+      margin-left: -1rem;
     }
   }
 
@@ -77,18 +101,18 @@
 
   /* Media queries for responsiveness */
   @media (max-width: 768px) {
-    flex-direction: column;
-    text-align: center;
+    .main-container {
+      flex-direction: column;
+      text-align: center;
 
-    .number2 {
-      width: 20px;
-      top: 1px;
-      left: -350px;
-      bottom: 0;
-    }
+      .number {
+        right: 0;
+        bottom: 0;
+      }
 
-    .rating-container .star-container {
-      width: 100%;
+      .rating-container .star-container {
+        width: 100%;
+      }
     }
   }
 }

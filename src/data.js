@@ -34,10 +34,11 @@ const data = {
     data4: {
         number: 4,
         star: fourStar,
-        para1: "para",
+        boldPara: "CDK Responsive Builder:",
+        para1: "An extensive library of widgets and apps, and detailed step-by-step guides",
         para2: "para",
         rate: "9.1",
-        rateText: "Exceptional",
+        rateText: "Very Good",
     }
 };
 

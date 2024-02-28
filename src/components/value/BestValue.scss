@@ -1,4 +1,18 @@
-.best-container{
+// .best-container{
+//     background: #FF7724;
+//     color: #FFFFFF;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     gap: 0.5rem;
+//     border-radius: 0rem 1rem 1rem 0rem;
+//     padding: 0.5rem;
+//     width: 12%;
+// }
+
+
+
+.best-container {
     background: #FF7724;
     color: #FFFFFF;
     display: flex;
@@ -8,4 +22,11 @@
     border-radius: 0rem 1rem 1rem 0rem;
     padding: 0.5rem;
     width: 12%;
-}
+  
+    // Media queries for responsiveness
+    @media (max-width: 768px) {
+      width: 30%; // Adjust for smaller screens
+      border-radius: 0.5rem; // Adjust border-radius as needed
+    }
+  }
+  
