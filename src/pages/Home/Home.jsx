@@ -11,6 +11,7 @@ import fourStar from "../../assets/png/4star.png";
 import cup from "../../assets/png/cup.png";
 import diamond from "../../assets/png/diamond.png";
 import BestValue from "../../components/value/BestValue";
+import data from "../../data";
 
 const Home = () => {
   return (
@@ -68,25 +69,34 @@ const Home = () => {
           <BestValue value={"Best Choice"} png={cup} />
         </div>
         <Card
-          rate={"9.8"}
-          rateText={"Exceptional"}
+          rate={data.data1.rate}
+          spanBold={data.data1.boldPara}
+          paraOne={data.data1.para1}
+          paraTwo={data.data1.para2}
+          rateText={data.data1.rateText}
           star={fiveStar}
-          number={"1"}
+          number={data.data1.number}
         />
         <div className="best-value">
           <BestValue value={"Best Value"} png={diamond} />
         </div>
         <Card
-          rate={"9.5"}
-          rateText={"Excellent"}
+          rate={data.data2.rate}
+          spanBold={data.data2.boldPara}
+          paraOne={data.data2.para1}
+          paraTwo={data.data2.para2}
+          rateText={data.data2.rateText}
           star={fourAndHalfStar}
-          number={"2"}
+          number={data.data2.number}
         />
         <Card
-          rate={"9.3"}
-          rateText={"Exceptional"}
+          rate={data.data3.rate}
+          spanBold={data.data3.boldPara}
+          paraOne={data.data3.para1}
+          paraTwo={data.data3.para2}
+          rateText={data.data3.rateText}
           star={fiveStar}
-          number={"3"}
+          number={data.data3.number}
         />
         <Card
           rate={"9.1"}
@@ -104,6 +114,7 @@ const Home = () => {
       <div className="signUp-container">
         <SignUp />
       </div>
+      {console.log(data.data1.number)}
     </div>
   );
 };
