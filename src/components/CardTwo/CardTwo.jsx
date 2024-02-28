@@ -3,16 +3,7 @@ import download_1 from "../../assets/download_1.png";
 import blueDown from "../../assets/png/blueDown.png";
 import blueTick from "../../assets/png/Blue.png";
 // eslint-disable-next-line react/prop-types
-
-const CardTwo = ({
-  rate,
-  star,
-  rateText,
-  number,
-  spanBold,
-  paraOne,
-  paraTwo,
-}) => {
+const CardTwo = ({ rate, star, rateText, number, spanBold, paraOne }) => {
   return (
     <div className="main-container">
       <div className="number2">{number}</div>
